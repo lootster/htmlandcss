@@ -24,10 +24,16 @@
 	5. each label+input pair is wrapped in a <div> 
 	-->
 	<form action="https://coderinyou-1332.appspot.com/submit" method="POST">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="frank lee" required><br>
-		<label for="email">Email</label>
-		<input type="text" id="email" placeholder="hello@stackup.sg" required><br>
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="user_name" placeholder="frank lee" required>
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input type="text" id="email" name="user_email" placeholder="hello@stackup.sg" required>
+		</div>
+
 		<input type="submit" value="sign up">
 	</form>
 
