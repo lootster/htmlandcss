@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first Javascript lesson</title>
+
+    <script language="javascript" type="text/javascript">
+        //all our javascript code here
+
+        var number = 1;
+        var name = "Darryl"; // global variable
+        var linebreak = "<br>";
+        var names = ["Angela", "chetan", "janine", "tong hwee", "christopher"];
+
+        function writeHTML() {
+            document.writeln("<h1>Hello World!!!</h1>");
+            document.writeln(number);
+            document.writeln("<br>");
+            document.writeln(name);
+        }
+
+        function sayName() {
+            var name = "Eddie"; // local variable
+
+            alert(this.name); //pop up message ; "this" will determin use of global variable
+        }
+        
+        function basicCalculation() {
+            var num1 = 5;
+            var num2 = 2;
+
+            document.write("5 * 2 =" + (num1 * num2) + linebreak);
+            document.write("5 / 2 =" + (num1 / num2) + linebreak);
+            document.write("5 + 2 =" + (num1 + num2) + linebreak);
+            document.write("5 - 2 =" + (num1 - num2) + linebreak);
+            document.write("5 % 2 =" + (num1 % num2) + linebreak);
+        }
+
+        function processNumber() {
+            var number = document.getElementById("num").value;
+            var RHS = 50;
+            //alert(number);
+            if (number < RHS) {
+                alert("You have failed the test");
+            }
+            else if (number > RHS) {
+                alert("You have passed the test");
+            }
+            else {
+                alert("Borderline pass");
+            }
+        }
+
+        function processNames() {
+            document.writeln("Number of items in Names:" + names.length + linebreak);
+
+            var count = 0;
+
+            while (count < names.length) {
+                document.writeln(names[count] + linebreak);
+                count++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <input type="button" value="Print Text" onclick="writeHTML()" />
+    <input type="button" value="Say Name" onclick="sayName()" />
+    <input type="button" value="Basic Calculation" onclick="basicCalculation()" />
+    <input type="button" value="Loop through Names" onclick="processNames()" />
+    <hr>
+    Enter a number: <input type="number" id="num" />
+    <input type="button" value="Post Number" onclick="processNumber()"/>
+</body>
+
+</html>
