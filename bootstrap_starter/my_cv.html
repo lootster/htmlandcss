@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bootstrap Walkthrough</title>
 
     <!-- default bootstrap -->
@@ -19,15 +21,195 @@
     <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
     
+    <link rel="stylesheet" href="custom.css">
+
     <!-- use this style for testing and development purposes -->
-    <!-- <style type="text/css">
+    <style type="text/css">
     .container{border: 2px dotted green;}
     .row{border: 1px dotted red;}
     .row [class*=' col-']{border: 2px dotted purple;}
-    </style> -->
+    </style>
     
 </head>
 <body>
 
+    <div class="container">
+
+        <div class="row"> <!--row 1-->
+            <div class="col-md-12">
+
+                <div class="jumbotron">
+                    <h1>Eat, Code, Sleep, Repeat</h1>
+                    <p>Tony Start</p>
+                    <p><a class="btn btn-primary" href="http://google.com" role="button">Learn more</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row"> <!--row 2-->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 1</h3>
+                        <p>test test test test</p>
+                        <p>
+                            <a class="btn btn-primary" href="http://">View More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 1</h3>
+                        <p>test test test test</p>
+                        <p>
+                            <a class="btn btn-primary" href="http://">View More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>Portfolio 1</h3>
+                        <p>test test test test</p>
+                        <p>
+                            <a class="btn btn-primary" href="http://">View More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row"> <!--row 3-->
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yZxUlZ3mMYg"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row"> <!--row 4-->
+            <div class="col-md-6">
+
+                <h3>Talk to me</h3>
+
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="user_name">Name</label>
+                        <input type="text" class="form-control" id="user_name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_email">Email</label>
+                        <input type="email" class="form-control" id="user_email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label for="">
+                                <input type="radio" name="my_radio" id="my_radio_1"> Check me out
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="">
+                                <input type="radio" name="my_radio" id="my_radio_1"> Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default" value="Drop me an email">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-md-6">
+                <h3>About Me</h3>
+                <hr>
+                <p>test</p>
+            </div>
+
+        </div>
+
+        <div class="row"> <!--row 5-->
+
+            <div class="col-md-4">
+                <h3>Working Hours</h3>
+
+                <table class="table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9-6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9-6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9-6pm</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7945094339143!2d103.78528081411463!3d1.2980165621029276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fe45692e5%3A0xc90d9ee9e29fd8c2!2s79+Ayer+Rajah+Crescent%2C+Block+79%2C+Singapore+139955!5e0!3m2!1sen!2ssg!4v1527912814751"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Find me!</h3>
+
+                <div class="list-group">
+                    <a href="http://" class="list-group-item">
+                        <i class="fa fa-phone fa-fw"></i>+65 123 456 789
+                    </a>
+                    <a href="http://" class="list-group-item">
+                        <i class="fa fa-envelope fa-fw"></i>hello@meet.me
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row"> <!--row 6-->
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="http://facebook.com">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>

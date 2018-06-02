@@ -1,3 +1,11 @@
 .btn {
     font-size: 12px;
 }
+
+.jumbotron{
+    background-image: url(https://i.pinimg.com/originals/95/e1/2c/95e12c1cbce38e5c58ed2178d0b8253e.png);
+}
+
+a {
+    font-size: 20px;
+}
